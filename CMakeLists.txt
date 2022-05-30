@@ -114,6 +114,10 @@ set(BUILD_USE_64BITS on)
 set(OS_BUNDLE MACOSX_BUNDLE)
 set(CMAKE_OSX_DEPLOYMENT_TARGET 10.12 CACHE STRING "Minimum OS X deployment version")
 
+set(FT_DISABLE_HARFBUZZ TRUE)
+set(FT_DISABLE_BROTLI TRUE)
+set(BUILD_SHARED_LIBS FALSE)
+
 if (NOT CMAKE_VERSION VERSION_LESS 3.3)
   # Allow symbol visibility settings also on static libraries. CMake < 3.3
   # only sets the property on a shared library build.

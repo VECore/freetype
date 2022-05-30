@@ -7,3 +7,4 @@ subprojects/*
 /tests/data/*
 .idea*
 cmake-build*
+*.DS_Store
