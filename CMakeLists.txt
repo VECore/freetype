@@ -110,6 +110,9 @@
 # to hide all other symbols. CMake supports a C_VISBILITY_PRESET property
 # starting with 2.8.12.
 cmake_minimum_required(VERSION 2.8.12)
+set(BUILD_USE_64BITS on)
+set(OS_BUNDLE MACOSX_BUNDLE)
+set(CMAKE_OSX_DEPLOYMENT_TARGET 10.12 CACHE STRING "Minimum OS X deployment version")
 
 if (NOT CMAKE_VERSION VERSION_LESS 3.3)
   # Allow symbol visibility settings also on static libraries. CMake < 3.3
